@@ -27,3 +27,9 @@ plugins:
   - jekyll-seo-tag
   - jekyll-sitemap
   - jekyll-liquify
+
+defaults:
+  - scope:
+      path: ""
+    values:
+      image: /assets/site-logo.png
