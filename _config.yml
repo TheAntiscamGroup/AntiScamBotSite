@@ -16,7 +16,6 @@ report_max_files: 4
 report_max_size: 10
 bot_name: ScamGuard
 discord_client_id: 1152057650226401320
-discord_uses_intents: false
 github_username: socksthewolf
 show_sidebar: false
 theme: bulma-clean-theme

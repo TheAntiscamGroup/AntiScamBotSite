@@ -51,10 +51,6 @@ Kick/remove the bot from your server. Data will be removed the next time the bot
 
 Data will be fully removed from the active working database and all backups within three calendar weeks.
 
-{% if site.discord_uses_intents == true %}
-{% include intents.html %}
-{% endif %}
-
 ## What about reporting scams from the website?
 
 Data submitted via the [report page](/report) is handled in transit by Cloudflare before stored at rest on the TAG support server, and such data is under the terms set forth by Discord's Privacy Policy itself. Any uploaded image evidence lasts for about six months in a secure bucket.
