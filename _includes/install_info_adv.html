@@ -1,6 +1,10 @@
 <hr />
 <a name="advanced"></a>
-<p><b>ADVANCED!</b> Installing {{ site.bot_name }} without giving it a moderator role:</p>
+<article>
+	<details>
+		<summary>Install without a Moderator Role (<b>ADVANCED</b>)</summary>
+		This method is <u>not recommended</u> because there are more chances for errors to occur during runtime, it's usually better and safer to grant the {{ site.bot_name }} a moderator
+		role. However, if you would rather not do that for whatever reason, follow these steps to bypass the mod role requirement.
 <ol>
 	<li>Move the role in your role management screen like below<br />
 
@@ -8,13 +12,14 @@
 	This helps prevent Discord permission mismatches that may occasionally occur.
 
 An example of the placement can be seen in the video below:
-<div class='embed-container centered'>
+<div class='embed-container centered is-small'>
 	<iframe
 		src='https://www.youtube.com/embed/XYaQi3hM9ug'
 		width='700'
 		height='480'
 		frameborder='0'
-		allowfullscreen='true'>
+		allowfullscreen='true'
+		referrerpolicy='strict-origin-when-cross-origin'>
 	</iframe>
 </div>"  %}
 
@@ -24,3 +29,5 @@ An example of the placement can be seen in the video below:
 	</li>
 	<li>Add the {{ site.bot_name }} role to a moderator channel so it can send important information to it as needed (usually if a ban fails to be applied).</li>
 </ol>
+		</details>
+</article>

@@ -14,6 +14,24 @@
   background-color: rgba(0,0,0, 0.09);
 }
 
+.navbar-burger {
+  color: black;
+}
+
 .centered {display:block;text-align:center;margin-left:auto;margin-right:auto}
+
+article > details {
+  &:not(:open) {
+    border-bottom: 5px gray solid;
+  }
+  
+  summary {
+    :focus {
+      outline-style: none;
+    }
+    font-size: 1.3em;
+    cursor: pointer;
+  }
+}
 
 [x-cloak] { display: none !important; }

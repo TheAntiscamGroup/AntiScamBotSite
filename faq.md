@@ -138,7 +138,7 @@ So currently, this bot requires that someone with a "Trusted" role approves the 
 
 ### Can {{ site.bot_name }} ever ban the server owner or mods?
 
-{{ site.bot_name }} cannot ban anyone who has a role located higher in the roles list than it. The only exception to this rule is if you transfer your server ownership to the bot (don't do this). It is suggested to put the role for {{ site.bot_name }} directly above your general role or underneath your moderator role.
+{{ site.bot_name }} cannot ban anyone who has a role equal to or higher than it in the roles list. The only exception to this rule is if you transfer your server ownership to the bot (don't do this). It is suggested to give {{ site.bot_name }} a mod role, which usually bypasses any issues safely.
 
 ### What about mistakes?
 
