@@ -1,6 +1,6 @@
 ---
 title: Web Report Submission
-description: This text will be dynamically replaced.
+subtitle: This text will be dynamically replaced.
 layout: page
 hero_darken: true
 hero_height: is-fullwidth
