@@ -56,10 +56,6 @@ Legitimate users can get around this Discord behavior by joining the server on m
 
 Yes! You can see the [project source code here](https://github.com/SocksTheWolf/AntiScamBot).
 
-{% if site.discord_uses_intents == true %}
-#{% include intents.html %}
-{% endif %}
-
 ### What information do you store?
 
 You can [view our privacy policy right here](/privacy)!
