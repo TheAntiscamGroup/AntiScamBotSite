@@ -5,7 +5,7 @@ hero_darken: true
 hero_height: is-fullwidth
 ---
 
-# Scammers are a scourge on our Discord communities
+## Scammers are a scourge on our Discord communities
 
 And unless they are banned in all relative servers, they'll hop onto the next server and then attempt to scam people from there next.
 
