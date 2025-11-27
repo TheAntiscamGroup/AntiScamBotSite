@@ -34,7 +34,7 @@ The usage of the bot requires the following data collected/stored:
 * A numeric value that represents the Owner ID of the Server ("Owner ID")
 * A numeric value that represents the activator of the bot in a server ("Activator ID")
 * A value that represents if the bot is "activated" in a server with the "Server ID" ("Activated")
-* Settings related to {{ site.bot_name }}'s configuration in your server
+* User Settings related to {{ site.bot_name }}'s configuration in your server (provided by the `/scamguard config` and `/scamguard setup` commands)
 * Basic server information to help first time installation/activation (not stored)
 
 For the TAG approver/review team, the following information is stored when they ban an scammer:
@@ -74,7 +74,7 @@ _Information in reports should not be considered private._
 
 ### Role Specific
 
-Outside of general data access, some roles have access to a bit more private information.
+Outside of the above general data access, some roles have access to a bit more private information.
 Who has that access and the level of said access is detailed below.
 
 #### Maintenance users
@@ -96,23 +96,9 @@ Have access to:
 
 #### Trusted approvers
 
-Have access to some basic information when the bot is first added to a server. Some of this information does overlaps with data we do have to store to maintain
+Have access to some basic server information when the bot is first added to a server. Some of this information does overlap with the data we store to maintain
 the bot's ability to work. However, the scenario in which Trusted Approvers are able to see this information is limited to the first time the bot is installed until
 the bot is fully activated.
-
-To make it easier to visualize, this data is separated based on what is stored internally and what is showed in transit. Just as a refresher.
-
-Stored:
-
-* Server Name
-* Server ID
-* Server Owner Handle
-* Who requested the server activated
-
-Not Stored:
-
-* Server Icon
-* Approx size of the server
 
 ---
 
