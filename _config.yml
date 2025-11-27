@@ -32,3 +32,14 @@ defaults:
       path: ""
     values:
       image: /assets/site-logo.png
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - .gitattributes
+  - .gitignore
+  - .markdownlint.json
+  - CNAME
+  - README.md
+  - .github/
+  - LICENSE
