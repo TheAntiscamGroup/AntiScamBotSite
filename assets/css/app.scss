@@ -51,4 +51,9 @@ details.no-arrow summary
   margin-top: 10px; 
 }
 
+.navbar {
+  user-select: none;
+  -webkit-user-select: none;
+}
+
 [x-cloak] { display: none !important; }

@@ -1,0 +1,16 @@
+<div class="box">
+  {%assign level_items=site.data.[{{include.loc}}] %}
+  <nav class="level {%if include.mobile %}is-mobile{%endif%} is-fullwidth">
+  {% for item in level_items.items %}
+    <div class="level-item has-text-centered">
+      <div>
+        <p class="heading">{{- item.title | liquify -}}</p>
+        <p class="title" id="{%if item.id %}{{item.id}}{% else %}{{-item.title | slugify-}}{%endif%}">{{- item.subtitle -}}</p>
+        {% if include.use_hr %}
+        <hr />
+        {% endif %}
+      </div>
+    </div>
+  {% endfor %}
+  </nav>
+</div>

@@ -1,0 +1,10 @@
+items:
+- title: Discord Servers Using {{ site.bot_name }}
+  subtitle: ~500
+  id: installs
+- title: Scammers Banned
+  subtitle: Over 2000
+  id: banned
+- title: Active Since
+  subtitle: Sep 25 2023
+  id: years

@@ -16,6 +16,8 @@ To stop this from happening, {{ site.bot_name }} was created to share a ban list
 
 Actions will always be published to a dedicated channel in the TAG Server. This feed can optionally be subscribed to within your own server upon bot installation.
 
+---
+
 Upon {{ site.bot_name }} taking an action, an update will be posted like this:
 {:.centered}
 

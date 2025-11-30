@@ -6,6 +6,8 @@ toc: true
 hero_height: is-fullwidth
 ---
 
+---
+
 ## {{ site.bot_name }} Info
 
 ---

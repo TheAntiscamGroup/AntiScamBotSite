@@ -21,4 +21,6 @@
     <li><strong>IMPORTANT</strong>: Activate {{ site.bot_name }} by running <code class="language-plaintext highlighter-rouge">/scamguard setup</code> in your server!</li>
 	<li>You are ready to start using {{ site.bot_name }} in your server!</li>
 </ol>
+{% if include.show_using %}
 <p class="has-text-centered"><a class="button is-rounded is-outlined is-primary" href="/usage">All done? Learn how to use {{ site.bot_name}} here!</a></p>
+{% endif %}

@@ -8,7 +8,8 @@ redirect_from: /privacy-policy
 toc: true
 ---
 
-<br />
+---
+
 > Last Updated: 11/26/2025
 
 The usage of this service/application ("bot") in your server requires the collection of some specific user data. Usage and interaction of {{ site.bot_name }} ("the bot"), reporting tools or the user app interactions ("tools") is considered an agreement to this policy.
