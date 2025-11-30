@@ -20,6 +20,10 @@ It's recommended that you do, it solves so many potential issues with Discord pe
 
 However, if you would not want to do so, [follow the instructions on this page here](/advanced-install).
 
+### Can {{ site.bot_name }} ever ban the server owner or mods?
+
+{{ site.bot_name }} cannot ban anyone who has a role equal to or higher than it in the roles list. The only exception to this rule is if server ownership was transferred to the bot (please don't do this). This is why it is suggested to just give {{ site.bot_name }} a mod role, which will allow it to operate correctly.
+
 ### Why does {{ site.bot_name }} need the permissions it has?
 
 Because of how Discord handles permissions it needs the following permissions:
@@ -42,17 +46,25 @@ Because of how Discord handles permissions it needs the following permissions:
 
 * `View Channels`: To handle sending messages on initial setup.
 
-### When I activate the bot, why is it suddenly banning hundreds of accounts?
+### When I activated the bot, why did it suddenly started banning tons of accounts?
 
-{{ site.bot_name }} imports all the bans of scammers that it knows about. This can be several hundreds of accounts, but not to worry, due to the way {{ site.bot_name }} processes bans, these accounts do not have to be in your server. So while it looks like your entire discord community is getting banned, it is not.
+{{ site.bot_name }} imports all the bans of scammers that it knows about. This can be several hundreds to thousands of accounts, but not to worry, due to the way {{ site.bot_name }} processes bans, these accounts do not have to be in your server.  
 
-### Someone messaged me saying they're unable to get into my server, is that ScamGuard's doing?
+While it may look like your Discord community is going through a ban wave, it is not.
+
+### How come {{ site.bot_name }} started banning a bunch of accounts a day later?
+
+Discord has a limit to the number of accounts you can ban a day. {{ site.bot_name }} detects when your server is getting close and stops _way before_ that limit is hit.
+
+This process will then resume where the bot left off, every day over the next few days until it is all caught up.
+
+### Someone messaged me saying they're unable to get into my server, is that {{ site.bot_name }}'s doing?
 
 > It's _extremely unlikely_ that a legitimate user was caught and banned by {{ site.bot_name }}.
 
 You can run a `/scamguard check` against their Discord user id to see if their account is registered as a scammer by {{ site.bot_name }}.  
 
-If this check comes back _false_, the user might have tried to join from a "suspicious IP" and was barred entry by Discord.
+If this check comes back as _false_, the user might have tried to join from a "suspicious IP" and was barred entry by Discord.
 
 This can happen if a scammer previously had the user's IP address (as IP addresses often recycle to various people) and either made several accounts or violated the Discord TOS.
 
@@ -67,7 +79,7 @@ _It's been two years (as of November 2025), since we've heard anyone having this
 
 ### Is {{ site.bot_name }} open source?
 
-Yes! You can see the [project source code here](https://github.com/SocksTheWolf/AntiScamBot).
+Yes! You can see the [project source code here](/github).
 
 ### What information do you store?
 
@@ -79,7 +91,7 @@ Yes, you can [view that page here](/terms)!
 
 ### Why is the icon of the bot "hey^^"?
 
-When these scammers first ran rampant, they would always open their dms with the message "hey^^". It was really easy to tell if someone was fake because of it.
+When this project first started, scammers would always start their DMs with the message "hey^^". It was really easy to tell if someone was about to scam you because of this.
 
 ## How to use
 
@@ -97,7 +109,7 @@ Currently we support three different ways of reporting a scam!
 
 When you report an user, you'll be asked to provide some image evidence, this is important when determining appropriate action.
 
-<span class="install-note">**SUGGESTION**: When you go to ban an user from Discord from your server, use the bot's report function beforehand, that way you can make the ban more impactful, and help protect others too!</span>
+{% include notification.html message="**SUGGESTION**: When you go to ban a scammer from your server, use `/scamguard report` function beforehand, that way you can make your ban more impactful by helping protect others too!" status="is-warning is-light" icon="fas fa-exclamation" %}
 
 ### How do I know if someone is already banned?
 
@@ -105,7 +117,7 @@ A couple of different ways!
 
 * Via the server feed (see below) that you can install when setting up {{ site.bot_name }}
 * Looking them up in the [TAG Server](/discord)
-* Via the [API]({{ site.api_docs }})
+* Via the [API](/api)
 * Running the command `/scamguard check` with an user id or a Discord handle
 
 ![{{ site.bot_name }} Action Feed Screenshot](/assets/botbanchannel.png){:.centered}
@@ -120,17 +132,17 @@ All bans will be logged into your server's audit log. You can revert any ban if 
 
 ### What is a scammer?
 
-Scammers are users/bots on Discord who send unsolicited direct messages demanding that you commission the scammer that you do not know to buy their traced/AI/stolen artwork. In some instances, they charge your payment account (Paypal, Boosty, etc) and never deliver anything.
+Scammers are users/bots on Discord who send unsolicited direct messages demanding that you commission the scammer that you do not know to buy their traced/genAI/stolen artwork. In some instances, they charge your payment account (Paypal, Boosty, etc) and never deliver anything.
 
 This is not a complete list, but these are also scams as well:
 
 * Ask you to playtest their game out of the blue (this is usually from someone getting their account compromised)
 * Ask you what you'd do with sudden influxes of cash (the "sugar momma" scam)
 * Direct solicitation of commissions
-* Stolen/traced/obvious AI artwork
+* Stolen/traced/obvious genAI artwork
 * Fake steam game offers, phishing links
-* Impersonating other users
-* Management/Methods to boost your channel
+* Impersonating other users (usually big content creators)
+* Proposing channel management services & SEO methods to boost your channel
 
 They will always solicit you first. Do not give these scammers your money.
 
@@ -140,21 +152,21 @@ They will always solicit you first. Do not give these scammers your money.
 
 ### How does {{ site.bot_name }} know who is a scammer?
 
-User reports via the bot or the website! {{ site.bot_name }} has a Trust and Safety team that reviews each user report and takes appropriate action.
+User report submissions! {{ site.bot_name }} has a Trust and Safety team that reviews each user report and takes appropriate action. We don't use AI.
+
+### Do you use AI?
+
+Nope. We're not interested. There's too many potential false positives.
 
 ### What about abuse?
 
-So currently, this bot requires that someone with a "Trusted" role approves the scammers proposed. If they are approved, the ban will be blasted to all servers that subscribe to {{ site.bot_name }}.
-
-### Can {{ site.bot_name }} ever ban the server owner or mods?
-
-{{ site.bot_name }} cannot ban anyone who has a role equal to or higher than it in the roles list. The only exception to this rule is if you transfer your server ownership to the bot (don't do this). It is suggested to give {{ site.bot_name }} a mod role, which usually bypasses any issues safely.
+The bot requires that someone with a `Trusted` role vets the report on the suspected scammer. If the approver confirms the report is valid, the ban will be blasted to all servers that use {{ site.bot_name }}.
 
 ### What about mistakes?
 
-{{ site.bot_name }} can revert any mistakes and unban someone if this needs to happen, approvers have a command to reverse any scam bans that the database knows about (it cannot randomly unban any user, {{ site.bot_name }} can only unban users that it banned originally).
+{{ site.bot_name }} can revert any mistakes if this needs to happen, approvers have a command to reverse any bans that the bot acted on (it cannot randomly unban any user, {{ site.bot_name }} can only unban users that it banned originally).
 
-You can also just simply unban the user.
+If you are a server mod, you can also just simply unban the user in your own server as well. If your server is already fully activated/sync'd, {{ site.bot_name }} will not attempt to reban the user.
 
 ## The Group
 
@@ -166,7 +178,9 @@ It's just a silly little name for the Discord server.
 
 ### How do I join the group?
 
-This isn't a formal collective or anything of the sort. It's literally a bunch of people who keep getting commission scams and those that have community servers that use {{ site.bot_name }}.
+There's no official group or collective.  
+
+However, by making reports or contributing to the bot [on Github](/github), you're helping all of us out.
 
 ### I don't have a Discord server, can I join the TAG server?
 

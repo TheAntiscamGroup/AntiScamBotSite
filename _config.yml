@@ -4,8 +4,6 @@ author: The Antiscam Group
 logo: /assets/site-logo.png
 favicon: /favicon.ico
 url: "https://scamguard.app"
-api_docs: "https://api.scamguard.app"
-contact_url: "https://socksthewolf.com/contact"
 google_analytics: "G-3B15EPXBFZ"
 permalink: /:slug
 comments: false
@@ -15,7 +13,6 @@ report_max_files: 4
 report_max_size: 10
 bot_name: ScamGuard
 discord_client_id: 1152057650226401320
-github_username: socksthewolf
 show_sidebar: false
 hide_share_buttons: true
 theme: bulma-clean-theme

@@ -10,9 +10,9 @@ hero_height: is-fullwidth
 
 # What is ScamGuard?
 
-{{ site.bot_name }} is a Discord bot that acts as a firewall for your server! Using a shared ban list built off user submissions, it bans scammers that attempt to deceive your server members on Discord.
+{{ site.bot_name }} is a bot for Discord that acts as a firewall for your server! Using a shared ban list built off user submissions, {{ site.bot_name }} bans scammers that attempt to deceive your server members.
 
-With this shared network, we are able to take out and prevent scammers from entering your server to harass your users. When a scammer appears in one server and is reported, all servers using {{ site.bot_name }} will end up also banning the scammer as well.
+With this shared network, we are able to prevent scammers from infiltrating your community to harass your users. When a scammer is reported & verified, all servers using {{ site.bot_name }} will automatically ban the scammer instantly.
 
 To [learn more, click here](/about)!
 
@@ -22,6 +22,6 @@ To [learn more, click here](/about)!
 
 The AntiScam Group is a project created by [SocksTheWolf](https://socksthewolf.com) to deal with some of the rampant scams that have been plaguing our communities. It is built up of a group of server admins, moderators and users reporting the scams they receive over Discord.
 
-Even if you don't have a Discord server, you can join the discord as well, and report any scams you get.
+Even if you don't have your own Discord server, you can join the TAG Discord, and report any scams you get.
 
-Install the [current project here](/install), [report a scam](/report) or [join the Discord](/discord).
+Install the [{{site.bot_name}} bot here](/install), [report a scam](/report) or [join the Discord](/discord).

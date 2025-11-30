@@ -16,7 +16,7 @@ This terms of service document applies to each of the following:
 * Each and every user of {{ site.bot_name }}
 * All users that maintain a presence in our [support server](/discord)
 * Any users of the User App Interactions Tools
-* Any users of our [API]({{ site.api_docs }})
+* Any users of our [API](/api)
 
 By performing one of these actions, you here by agree to these terms of service and observe that this document may change after a notice in the [control/support server](/discord).
 
