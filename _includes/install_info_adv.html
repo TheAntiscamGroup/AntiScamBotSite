@@ -1,15 +1,7 @@
 <hr />
 <a name="advanced"></a>
-{%if include.open %}
-<style>
-	summary::marker {
-		display: none;
-		content: "";
-	}
-</style>
-{% endif %}
 <article>
-	<details {% if include.open %} open {% endif %}>
+	<details {% if include.open %} open class="no-arrow" {% endif %}>
 		<summary>Install without a Moderator Role (<b>ADVANCED</b>)</summary>
 		This method is <u>not recommended</u> because there are more chances for errors to occur during runtime, it's usually better and safer to grant the {{ site.bot_name }} a moderator
 		role. However, if you would rather not do that for whatever reason, follow these steps to bypass the mod role requirement.

@@ -39,6 +39,14 @@ article > details {
   }
 }
 
+details.no-arrow summary
+{
+  &::marker, &::-webkit-details-marker {
+		display: none;
+		content: "";
+  }
+}
+
 .report {
   margin-top: 10px; 
 }
