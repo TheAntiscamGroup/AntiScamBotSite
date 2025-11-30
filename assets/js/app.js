@@ -18,6 +18,6 @@ if (fileInput) {
 if (document.getElementById("backToTop")) {
   addBackToTop({
     backgroundColor: '#00d5b3',
-    textColor: 'black'
+    textColor: '#000000'
   });
 }
