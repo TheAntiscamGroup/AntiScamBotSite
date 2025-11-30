@@ -2,7 +2,6 @@
 title: Privacy Policy
 subtitle: ScamGuard's Simple (yet detailed) Privacy Policy
 layout: page
-hero_darken: true
 hero_height: is-fullwidth
 description: The Privacy Policy for the ScamGuard Discord bot
 redirect_from: /privacy-policy
@@ -10,7 +9,6 @@ toc: true
 ---
 
 <br />
-{% include back_to_top.html %}
 > Last Updated: 11/26/2025
 
 The usage of this service/application ("bot") in your server requires the collection of some specific user data. Usage and interaction of {{ site.bot_name }} ("the bot"), reporting tools or the user app interactions ("tools") is considered an agreement to this policy.
@@ -67,10 +65,10 @@ Collection of data may expand or modify in the future, but will attempt to stay 
 
 ### General
 
-All users in the TAG server that have the role of reporter or user can see Scam Reports sent in either via an automated method or posted manually.
+All users that either have the role of `Reporter` or `User`, or they are a part of TAG staff can see Scam Reports regardless of method submitted.  
 This visibility and transparency allows us to stay **100% auditable**.
 
-_Information in reports should not be considered private._
+_Information in reports **should not** be considered private._
 
 ### Role Specific
 
@@ -146,7 +144,9 @@ Data will be fully removed from the active working database and all backups with
 
 ## What about reporting scams from the website/tool?
 
-Data submitted via the [report page](/report) or the tool is handled in transit by Cloudflare before stored at rest on the TAG support server, and such data is under the terms set forth by Discord's Privacy Policy itself. Any uploaded image evidence lasts for approximately one calendar year in a secure bucket before being automatically deleted.
+Data submitted via the [report page](/report) or the tool is handled in transit by Cloudflare before stored at rest on the TAG support server. Any uploaded image evidence lasts for approximately one calendar year from upload in a publicly accessible R2 bucket (not indexible) before being automatically deleted.  
+  
+All reports fall [under this section of the policy](/privacy#general).
 
 ## What about...?
 

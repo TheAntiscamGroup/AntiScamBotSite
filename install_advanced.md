@@ -1,7 +1,6 @@
 ---
 title: Advanced Installation
 layout: page
-hero_darken: true
 sitemap: false
 hero_height: is-fullwidth
 permalink: /advanced-install

@@ -3,7 +3,7 @@
 # the one that powers deckconnect
 source "https://rubygems.org"
 
-gem 'jekyll', '~> 4.2.0'
+gem 'jekyll', '~> 4.3.0'
 gem 'webrick', '~> 1.9', '>= 1.9.1'
 gem 'tzinfo', '~> 2.0.6'
 gem 'tzinfo-data', '~> 1.2025.2'
@@ -16,6 +16,6 @@ group :jekyll_plugins do
 	gem "jekyll-redirect-from"
 	gem "jekyll-seo-tag"
 	gem "jekyll-sitemap"
-    gem "jekyll-liquify"
-	gem "bulma-clean-theme"
+	gem "jekyll-liquify"
+	gem "bulma-clean-theme", '1.3.0'
 end

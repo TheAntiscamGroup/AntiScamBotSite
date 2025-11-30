@@ -1,42 +1,78 @@
-<link rel="stylesheet" href="/assets/css/pico.css">
-<section class="pico">
+<section class="box report">
 <script src="https://challenges.cloudflare.com/turnstile/v0/api.js" defer></script>
 <form enctype="multipart/form-data" action="/submitreport" method="POST">
-    <label for="scammerusername">Scammer Discord Username <small>(required)</small></label>
-    <input type="text" id="scammerusername" name="scammerusername" required />
-    <small>This is the text handle underneath their display name in the profile screen. 
-      You can get it via the <code>Copy Username</code> option on the user's profile card.</small>
-    
-    <label for="scammeruserid">Scammer Discord User ID <small>(required)</small></label>
-    <input type="text" id="scammeruserid" name="scammeruserid" maxlength="20" minlength="17" required />
-    <small>This is the numeric Discord User ID of the scammer. 
-      If you don't know how to get it, 
-      <a href="https://support.discord.com/hc/en-us/articles/4407571667351-How-to-Find-User-IDs-for-Law-Enforcement" target="_blank">visit this Discord article</a>.</small>
+  <div class="field">
+    <label class="label" for="scammerusername">Scammer Discord Username <small>(required)</small></label>
+    <div class="control">
+      <input class="input" type="text" id="scammerusername" name="scammerusername" required />
+      <p class="help">This is the text handle underneath their display name in the profile screen. 
+      You can get it via the <code>Copy Username</code> option on the user's profile card.</p>
+    </div>
+  </div>
 
-    <label for="evidence">Evidence Upload <small>(required)</small></label>
-    {% if site.report_support_multiple_files == true %}
-    <input type="file" id="evidence" name="evidence" accept="image/*" required multiple />
-    {% else %}
-    <input type="file" id="evidence" name="evidence" accept="image/*" required />
-    {% endif %}
-    <small>Please submit screenshot evidence regarding the scammer's actions.
-    {% if site.report_support_multiple_files == true %}
-      Max {{ site.report_max_files }} files (up to {{ site.report_max_size_per_file }}MB each) for a total of {{ site.report_max_size }}MB.
-    {% endif %}
-    </small>
+  <div class="field">
+    <label class="label" for="scammeruserid">Scammer Discord User ID <small>(required)</small></label>
+    <div class="control">
+      <input type="text" class="input" id="scammeruserid" name="scammeruserid" maxlength="20" minlength="17" required />
+      <p class="help">This is the numeric Discord User ID of the scammer. 
+        If you don't know how to get it, 
+        <a href="https://support.discord.com/hc/en-us/articles/4407571667351-How-to-Find-User-IDs-for-Law-Enforcement" target="_blank">visit this Discord article</a>.</p>
+    </div>
+  </div>
 
-    <label for="reportername">What is your Discord Handle?</label>
-    <input type="text" name="reportername" id="reportername" />
-    <small>For potential follow up. You may leave this blank.</small>
+  <div class="field">
+    <label class="label">Evidence Upload <small>(required)</small></label>
+    <div class="file is-left is-box has-name is-primary">
+      <label class="file-label" for="evidence">
+        {% if site.report_support_multiple_files == true %}
+        <input type="file" class="file-input" id="evidence" name="evidence" accept="image/*" required multiple />
+        {% else %}
+        <input type="file" class="file-input" id="evidence" name="evidence" accept="image/*" required />
+        {% endif %}
+        <div class="file-cta">
+          <span class="file-icon">
+            <i class="fas fa-upload"></i>
+          </span>
+          <span class="file-label">Evidence Files</span>
+        </div>
+        <span class="file-name" id="evidence-names"></span>
+      </label>
+    </div>
+    <div class="control">
+      <p class="help">Please submit screenshot evidence regarding the scammer's actions.
+      {% if site.report_support_multiple_files == true %}
+        Max {{ site.report_max_files }} files (up to {{ site.report_max_size_per_file }}MB each) for a total of {{ site.report_max_size }}MB.
+      {% endif %}
+      </p>
+    </div>
+  </div>
 
-    <label for="reportcomments">Any other comments?</label>
-    <textarea id="reportcomments" name="reportcomments" rows="3"></textarea>
-    <small><br />This can be additional context (do you know if the account is compromised, 
-      or where the stolen images are from, etc) or anything else you'd like to make known.</small>
+  <div class="field">
+    <label class="label" for="reportername">What is your Discord Handle?</label>
+    <div class="control">
+      <input type="text" class="input" name="reportername" id="reportername" />
+      <p class="help">For potential follow up. You may leave this blank.</p>
+    </div>
+  </div>
 
-    <label>Captcha <small>(required)</small></label>
+  <div class="field">
+    <label class="label" for="reportcomments">Any other comments?</label>
+    <div class="control">
+      <textarea id="reportcomments" class="textarea" name="reportcomments" rows="3"></textarea>
+      <p class="help">This can be additional context (do you know if the account is compromised, 
+        or where the stolen images are from, etc) or anything else you'd like to make known.</p>
+    </div>
+  </div>
+
+  <div class="field">
+    <label class="label">Captcha <small>(required)</small></label>
     <div class="cf-turnstile" data-sitekey="0x4AAAAAAA7RsNNbQGiNcEUi"></div>
-    <br />
-    <input type="submit" value="Submit Report" />
+  </div>
+
+  <div class="field is-grouped is-grouped-centered">
+    <div class="control">
+      <input class="button is-primary is-medium is-fullwidth" type="submit" value="Submit Report" />
+    </div>
+  </div>
 </form>
 </section>

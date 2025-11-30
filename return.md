@@ -2,10 +2,16 @@
 title: Web Report Submission
 subtitle: This text will be dynamically replaced.
 layout: page
-hero_darken: true
 hero_height: is-fullwidth
 sitemap: false
 ---
-<p id="details"></p><br />
 
-<a id="btn-back"><button>Go Back</button></a>
+# Some data here
+{: .noticeHeader}
+
+Insert some text
+{: .noticeText}
+
+<div class="buttons are-medium">
+  <a id="btn-back" class="is-fullwidth button is-primary is-outlined">Go Back</a>
+</div>

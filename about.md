@@ -1,7 +1,6 @@
 ---
 title: About ScamGuard
 layout: page
-hero_darken: true
 hero_height: is-fullwidth
 ---
 
@@ -19,6 +18,7 @@ This bot is powered via community reporting, trusted verification, and complete 
 
 Information will always be posted to the bot ban channel, as seen below:
 
-![{{ site.bot_name }} Action Feed Screenshot](/assets/botbanchannel.png){:.centered}
+{% include image-modal.html ratio="is-2by1 is-centered" link="/assets/botbanchannel.png" alt="Action Feed Screenshot" %}
 
-<span>If you have additional questions, you can [check out the FAQ here](/faq).</span>{:.centered}
+If you have additional questions, you can [check out the FAQ here](/faq).
+{:.centered}

@@ -3,7 +3,6 @@ title: ScamGuard
 subtitle: The AntiScam Discord bot
 description: Homepage of the ScamGuard Discord bot
 layout: page
-hero_darken: true
 hero_link_text: Get It Now
 hero_link: /install
 hero_height: is-fullwidth

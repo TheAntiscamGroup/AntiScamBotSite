@@ -2,12 +2,13 @@
 ---
 
 :root {
-  --primary: #333333;
   //--bulma-body-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  --bulma-body-font-size: 1.03em;
+  //--bulma-body-font-size: 1.03em;
+  --bulma-help-size: 0.85em;
 }
 
-
+$primary: #00d5b3;
+//@import "main";
 @import "https://cdn.jsdelivr.net/npm/bulma@1.0.4/css/bulma.min.css";
 
 .navbar-item.is-active {
@@ -32,6 +33,10 @@ article > details {
     font-size: 1.3em;
     cursor: pointer;
   }
+}
+
+.report {
+  margin-top: 10px; 
 }
 
 [x-cloak] { display: none !important; }

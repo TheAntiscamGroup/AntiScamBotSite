@@ -1,5 +1,5 @@
 title: ScamGuard
-description: The website home to an automated solution to stop scammers on Discord.
+description: ScamGuard is the community-powered solution to Discord scammers
 author: The Antiscam Group
 logo: /assets/site-logo.png
 favicon: /favicon.ico
@@ -18,6 +18,7 @@ bot_name: ScamGuard
 discord_client_id: 1152057650226401320
 github_username: socksthewolf
 show_sidebar: false
+hide_share_buttons: true
 theme: bulma-clean-theme
 force_theme: dark
 footer_menu: footer_menu

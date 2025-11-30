@@ -2,7 +2,6 @@
 title: Terms of Service
 subtitle: ScamGuard's simple Terms of Usage page
 layout: page
-hero_darken: true
 hero_height: is-fullwidth
 description: The Terms of Service for the ScamGuard Discord bot
 redirect_from: /terms-of-service
