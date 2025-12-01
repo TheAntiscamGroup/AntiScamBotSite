@@ -21,7 +21,7 @@ Actions will always be published to a dedicated channel in the TAG Server. This 
 Upon {{ site.bot_name }} taking an action, an update will be posted like this:
 {:.centered}
 
-![{{ site.bot_name }} Action Feed Screenshot](/assets/botbanchannel.png){:.centered}
+{%include image.html width="637px" height="433px" alt="Action Feed Screenshot" src="/assets/botbanchannel.png" class="centered" %}
 
 If you have additional questions, you can [check out the FAQ here](/faq).
 {:.centered}

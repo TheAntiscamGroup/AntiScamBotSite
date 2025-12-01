@@ -24,7 +24,7 @@ To [learn more, click here](/about)!
 
 ## The Antiscam Group (TAG)
 
-The AntiScam Group is a joint operation created by [SocksTheWolf](https://socksthewolf.com) to deal with some of the rampant scams that have been plaguing our communities. It is comprised of server admins, moderators and users reporting the scams they receive over Discord.
+The AntiScam Group is a joint operation created by [SocksTheWolf](https://socksthewolf.com){:.has-text-info} to deal with some of the rampant scams that have been plaguing our communities. It is comprised of server admins, moderators and users reporting the scams they receive over Discord.
 
 Even if you don't have your own Discord server, you can join the TAG Discord, and report any scams you get.
 
