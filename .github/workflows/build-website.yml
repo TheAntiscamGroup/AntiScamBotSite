@@ -90,13 +90,9 @@ jobs:
         # The current thought is that it's not copying correctly or is copying too late
         # so if we put it into a different directory it should just work fine.
       - name: Purge CSS
-        run: npx purgecss -v --css assets/css/*.css --content "_site/*.html" --output cleancss
+        run: npx purgecss -v --css assets/css/*.css --content "_site/*.html" --output _site/assets/css
       - name: Sanity check
-        run: ls -a
-      - name: Sanity 2 Check
-        run: ls purgecss
-      - name: Copy Directory into Output
-        run: cp -rf cleancss/** _site/
+        run: ls -a _site/assets/css
       - name: Upload artifact
         # Automatically uploads an artifact from the './_site' directory by default
         uses: actions/upload-pages-artifact@v4
