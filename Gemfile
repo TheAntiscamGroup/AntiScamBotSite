@@ -18,4 +18,5 @@ group :jekyll_plugins do
 	gem "jekyll-sitemap"
 	gem "jekyll-liquify"
 	gem "bulma-clean-theme", '1.3.0'
+	gem "jekyll-minifier"
 end

@@ -23,9 +23,7 @@ plugins:
   - jekyll-seo-tag
   - jekyll-sitemap
   - jekyll-liquify
-
-sass:
-  style: compressed
+  - jekyll-minifier
 
 defaults:
   - scope:
@@ -47,3 +45,6 @@ exclude:
   - package.json
   - package-lock.json
   - assets/webfonts/license.txt
+
+jekyll-minifier:
+  compress_css: false
