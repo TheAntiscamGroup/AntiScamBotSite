@@ -64,6 +64,13 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
+      - name: Setup node
+        uses: actions/setup-node@v6
+        with:
+          cache: "npm"
+          package-manager-cache: true
+      - name: Node Package Install
+        run: npm install
       - name: Setup Ruby
         # https://github.com/ruby/setup-ruby/releases/tag/v1.207.0
         uses: ruby/setup-ruby@v1.243.0
@@ -79,6 +86,8 @@ jobs:
         run: bundle exec jekyll build --baseurl "${{ steps.pages.outputs.base_path }}"
         env:
           JEKYLL_ENV: production
+      - name: Purge CSS
+        run: npm run clean
       - name: Upload artifact
         # Automatically uploads an artifact from the './_site' directory by default
         uses: actions/upload-pages-artifact@v3

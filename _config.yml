@@ -43,3 +43,6 @@ exclude:
   - README.md
   - .github/
   - LICENSE
+  - node_modules/
+  - package.json
+  - package-lock.json

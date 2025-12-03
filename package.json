@@ -1,0 +1,9 @@
+{
+  "scripts": {
+    "clean": "purgecss --content _site/*.html --css assets/css/*.css --output _site/"
+  },
+  "type": "module",
+  "dependencies": {
+    "purgecss": "^7.0.2"
+  }
+}
