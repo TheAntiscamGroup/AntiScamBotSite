@@ -48,3 +48,4 @@ exclude:
 
 jekyll-minifier:
   compress_css: false
+  preserve_line_breaks: true
