@@ -87,11 +87,11 @@ jobs:
         run: bundle exec jekyll build --baseurl "${{ steps.pages.outputs.base_path }}"
         env:
           JEKYLL_ENV: production
-        # The current thought is that it's not copying correctly or is copying too late
-        # so if we put it into a different directory it should just work fine.
       - name: Purge CSS
         if: success()
-        run: npx purgecss -v --css assets/css/*.css --content "_site/*.html" --output _site/assets/css
+        # idk why but the output directory is much different than what it is on windows
+        # this should fix all of it though
+        run: npx purgecss -v -font --css assets/css/*.css --content "_site/*.html" --output _site/assets/css
       - name: Sanity check
         if: success()
         run: ls -lha _site/assets/css
