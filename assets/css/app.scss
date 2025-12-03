@@ -2,16 +2,12 @@
 ---
 
 :root {
-  //--bulma-body-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  //--bulma-body-font-size: 1.03em;
   --bulma-help-size: 0.85em;
 }
 
 .footer {
   --bulma-footer-padding: 3rem 1.5rem 2rem;
 }
-
-//$primary: #00d5b3;
 
 .navbar-item.is-active {
   background-color: rgba(0,0,0, 0.09);
