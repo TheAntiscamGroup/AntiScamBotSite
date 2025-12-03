@@ -87,7 +87,7 @@ jobs:
         env:
           JEKYLL_ENV: production
       - name: Purge CSS
-        run: npx purgecss -v --css assets/css/*.css --content "_site/*.html"
+        run: npx purgecss -v --css assets/css/*.css --content "_site/*.html" --output "_site/"
       - name: Upload artifact
         # Automatically uploads an artifact from the './_site' directory by default
         uses: actions/upload-pages-artifact@v4
