@@ -24,7 +24,7 @@
     <label class="label">Evidence Upload <small>(required)</small></label>
     <div class="file is-left is-box has-name is-primary">
       <label class="file-label" for="evidence">
-        {% if site.report_support_multiple_files == true %}
+        {% if site.report.support_multiple_files == true %}
         <input type="file" class="file-input" id="evidence" name="evidence" accept="image/*" required multiple />
         {% else %}
         <input type="file" class="file-input" id="evidence" name="evidence" accept="image/*" required />
@@ -40,8 +40,8 @@
     </div>
     <div class="control">
       <p class="help">Please submit screenshot evidence regarding the scammer's actions.
-      {% if site.report_support_multiple_files == true %}
-        Max {{ site.report_max_files }} files (up to {{ site.report_max_size_per_file }}MB each) for a total of {{ site.report_max_size }}MB.
+      {% if site.report.support_multiple_files == true %}
+        Max {{ site.report.max_files }} files (up to {{ site.report.max_size_per_file }}MB each) for a total of {{ site.report.max_size }}MB.
       {% endif %}
       </p>
     </div>
@@ -66,7 +66,7 @@
 
   <div class="field">
     <label class="label">Captcha <small>(required)</small></label>
-    <div class="cf-turnstile" data-sitekey="0x4AAAAAAA7RsNNbQGiNcEUi"></div>
+    <div class="cf-turnstile" data-sitekey="{{ site.report.turnstile_key }}"></div>
   </div>
 
   <div class="field is-grouped is-grouped-centered">

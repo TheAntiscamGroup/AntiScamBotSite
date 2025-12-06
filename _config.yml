@@ -7,10 +7,12 @@ url: "https://scamguard.app"
 google_analytics: "G-3B15EPXBFZ"
 permalink: /:slug
 comments: false
-report_support_multiple_files: true
-report_max_size_per_file: 3
-report_max_files: 4
-report_max_size: 10
+report:
+  support_multiple_files: true
+  max_size_per_file: 3
+  max_files: 4
+  max_size: 10
+  turnstile_key: "0x4AAAAAAA7RsNNbQGiNcEUi" 
 bot_name: ScamGuard
 discord_client_id: 1152057650226401320
 show_sidebar: false
