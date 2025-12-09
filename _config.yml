@@ -12,7 +12,8 @@ report:
   max_size_per_file: 3
   max_files: 4
   max_size: 10
-  turnstile_key: "0x4AAAAAAA7RsNNbQGiNcEUi" 
+  turnstile_key: "0x4AAAAAAA7RsNNbQGiNcEUi"
+  max_comment_length: 1500
 bot_name: ScamGuard
 discord_client_id: 1152057650226401320
 show_sidebar: false
