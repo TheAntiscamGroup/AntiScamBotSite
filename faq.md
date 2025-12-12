@@ -81,6 +81,17 @@ They can then access the server via anywhere without any negative effects.
 
 _It's been two years (as of November 2025), since we've heard anyone having this issue. Discord may have turned it off._
 
+### How come I don't see the channel I want to put messages in?
+
+If you have a lot of channels in your server, the Discord API will cap out the number of channels that appear in the channel selector.
+
+To fix this:  
+
+* Move the category/channel that you want the bot to send messages into to the top of the your channel list
+* Open your ScamGuard settings/activation using the command
+* Set the channel
+* Move the category/channel back to the original position
+
 ### Is {{ site.bot_name }} open source?
 
 Yes! You can see the [project source code here](/github).
