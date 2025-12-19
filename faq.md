@@ -147,7 +147,7 @@ All bans will be logged into your server's audit log. You can revert any ban if 
 
 ### What is a scammer?
 
-Scammers are users/bots on Discord who send unsolicited direct messages demanding that you commission the scammer that you do not know to buy their traced/genAI/stolen artwork. In some instances, they charge your payment account (Paypal, Boosty, etc) and never deliver anything.
+Scammers are users/bots on Discord who send unsolicited direct messages demanding that you commission the scammer that you do not know to buy their traced/genAI/stolen artwork. In some instances, they charge your payment account (PayPal, Boosty, etc.) and never deliver anything.
 
 This is not a complete list, but these are also scams as well:
 
@@ -181,7 +181,7 @@ The bot requires that someone with a `Trusted` role vets the report on the suspe
 
 {{ site.bot_name }} can revert any mistakes if this needs to happen, approvers have a command to reverse any bans that the bot acted on (it cannot randomly unban any user, {{ site.bot_name }} can only unban users that it banned originally).
 
-If you are a server mod, you can also just simply unban the user in your own server as well. If your server is already fully activated/sync'd, {{ site.bot_name }} will not attempt to reban the user.
+If you are a server mod, you can also just simply unban the user in your own server as well. If your server is already fully activated/sync'd, {{ site.bot_name }} will not attempt to ban the user again.
 
 ## The Group
 
@@ -195,7 +195,7 @@ It's just a silly little name for the Discord server.
 
 There's no official group or collective.  
 
-However, by making reports or contributing to the bot [on Github](/github), you're helping all of us out.
+However, by making reports or contributing to the bot [on GitHub](/github), you're helping all of us out.
 
 ### I don't have a Discord server, can I join the TAG server?
 

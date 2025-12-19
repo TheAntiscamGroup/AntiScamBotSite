@@ -103,12 +103,12 @@ the bot is fully activated.
 
 ---
 
-Overally, while external access is protected, this is not guaranteed and the bot owners assume no liability for the unintentional or malicious breach of any data.  
+Overall, while external access is protected, this is not guaranteed and the bot owners assume no liability for the unintentional or malicious breach of any data.  
 In the event of unauthorized data access, users in [the control server](/discord) will be alerted.
 
 ## Where is the data stored?
 
-The bot stores information in a sqlite database that the bot has access to.  
+The bot stores information in a SQLite database that the bot has access to.  
 Outside of the data provided by the API, there's no external access to the database.
 
 Both the bot and tools have log files that are stored locally and rotate about every 14 days.
