@@ -5,7 +5,7 @@
     <div class="level-item has-text-centered">
       <div>
         <p class="heading">{{- item.title | liquify -}}</p>
-        <p class="title" id="{%if item.id %}{{item.id}}{% else %}{{-item.title | slugify-}}{%endif%}">{{- item.subtitle -}}</p>
+        <p class="title" id="{%if item.id %}{{item.id}}{% else %}{{-item.title | slugify-}}{%endif%}">{{- item.subtitle | liquify -}}</p>
         {% if include.use_hr %}
         <hr />
         {% endif %}

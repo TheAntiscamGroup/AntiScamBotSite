@@ -1,10 +1,13 @@
+installs: ~500
+bans: ">2100"
+
 items:
 - title: Discord Servers Using {{ site.bot_name }}
-  subtitle: ~500
+  subtitle: "{{ site.data.stats.installs }}"
   id: installs
 - title: Scammers Banned
-  subtitle: Over 2100
+  subtitle: "{{ site.data.stats.bans }}"
   id: banned
 - title: Active Since
-  subtitle: Sep 25 2023
+  subtitle: "Sep 25, 2023"
   id: years
