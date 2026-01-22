@@ -1,5 +1,5 @@
-installs: ~500
-bans: ">2600"
+installs: "500+"
+bans: ">2700"
 
 items:
 - title: Discord Servers Using {{ site.bot_name }}
